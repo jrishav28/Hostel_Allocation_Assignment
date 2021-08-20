@@ -1,0 +1,279 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.floor {
+  background-color: rgba(70, 122, 139, 0);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* align-items: center; */
+}
+.floor-select {
+  background-color: rgb(230, 201, 173);
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  align-self: center;
+}
+option {
+  padding: 10px;
+}
+
+.floor-buttons {
+  background-color: rgba(108, 163, 182, 0.747);
+  margin-top: 20px;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  align-self: center;
+
+  padding: 10px;
+  /* align-self: center; */
+}
+.f1 {
+  display: flex;
+  justify-content: space-between;
+}
+.f2 {
+  display: flex;
+  justify-content: space-between;
+}
+.f3 {
+  display: flex;
+  justify-content: space-between;
+}
+.book {
+  margin-top: 20px;
+  background-color: blue;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: white;
+}
+.roomBtn {
+  color: rgb(3, 2, 20);
+  font-size: xx-large;
+  font-weight: 700;
+  margin: 10px;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background-color: rgba(0, 255, 0, 0.568);
+  /* padding: 20px; */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.modal {
+  z-index: 10;
+  background-color: rgba(96, 250, 199, 0.931);
+  border-radius: 20px;
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  height: 60vh;
+  width: 35vw;
+}
+#cross {
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.success,
+.display-message,
+.details {
+  text-align: center;
+}
+
+.f1 button:focus,
+.f2 button:focus,
+.f3 button:focus {
+  background-color: lightslategray;
+}
+
+#hs,
+#rn {
+  /* position: absolute;
+  bottom: 15%; */
+  margin-right: 100px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signin {
+  margin-top: 150px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hostel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#choose {
+  margin-top: 100px;
+  text-align: center;
+}
+.hostel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.girls:hover {
+  cursor: pointer;
+  transform: translate(2px);
+  background-color: rgba(119, 67, 75, 0.534);
+}
+.boys:hover {
+  cursor: pointer;
+  transform: translate(2px);
+  background-color: rgba(67, 107, 119, 0.534);
+}
+.girls,
+.boys {
+  padding: 20px;
+  color: rgba(77, 36, 43, 0.972);
+  border-radius: 30px;
+  text-align: center;
+  margin: 20px;
+  background-color: pink;
+  height: 150px;
+  width: 150px;
+}
+.girls p,
+.boys p {
+  display: inline;
+  font-size: 50px;
+}
+
+.girls h3,
+.boys h3 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.boys {
+  padding: 20px;
+  color: rgba(77, 36, 43, 0.972);
+  border-radius: 30px;
+  margin: 20px;
+  background-color: lightblue;
+  width: 150px;
+  height: 150px;
+}
+
+.hostel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hno {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+}
+.hostelno {
+  padding: 20px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: grey;
+  color: white;
+  margin: 10px;
+}
+
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: black;
+  font-weight: 600;
+  height: 10vh;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.dp {
+  border: 5px;
+  border-radius: 50%;
+  background-color: maroon;
+  color: white;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.final {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.final-container {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 500px;
+  text-align: left;
+  padding: 50px;
+}
+.label {
+  display: block;
+  font-weight: 800;
+}
+
+.result {
+  color: red;
+}
